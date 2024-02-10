@@ -1,5 +1,5 @@
 [package]
-name = "axum-test-helper"
+name = "axum-test-helpers"
 version = "0.7.4"
 edition = "2021"
 categories = ["development-tools::testing"]
