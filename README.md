@@ -16,7 +16,7 @@ Add this crate as a dev-dependency:
 
 ```
 [dev-dependencies]
-axum-test-helper = "0.*" # alternatively specify the version as "0.3.0"
+axum-test-helper = "0.7.4"
 ```
 
 Use the TestClient on your own Router:
@@ -31,7 +31,7 @@ let app = Router::new().route("/", get(|| async {}));
 
 // initiate the TestClient with the previous declared Router
 let client = TestClient::new(app);
-let res = client.get("/").send().await;
+let res = client.get("/").await;
 assert_eq!(res.status(), StatusCode::OK);
 ```
 
@@ -48,7 +48,7 @@ By default axum-test-helper print trace like `Listening on 127.0.0.1:36457`. You
 
 Before submitting a pull request or after pulling from the main repository, ensure all tests pass:
 
-``` shell
+```shell
 # Run axum-test-helper tests
 cargo test
 

@@ -5,7 +5,6 @@
 //! ```
 
 use axum::{response::Html, routing::get, Router};
-use std::net::SocketAddr;
 
 #[tokio::main]
 async fn main() {
@@ -13,12 +12,8 @@ async fn main() {
     let router = router();
 
     // run it
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
-    println!("listening on {}", addr);
-    axum::Server::bind(&addr)
-        .serve(router.into_make_service())
-        .await
-        .unwrap();
+    let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await.unwrap();
+    axum::serve(listener, router).await.unwrap();
 }
 
 fn router() -> Router {
@@ -33,13 +28,13 @@ async fn handler() -> Html<&'static str> {
 mod tests {
     use super::*;
     use axum::http::StatusCode;
-    use axum_test_helper::TestClient;
+    use axum_test_helper::*;
 
     #[tokio::test]
     async fn test_main_router() {
         let router = router();
         let client = TestClient::new(router);
-        let res = client.get("/").send().await;
+        let res = client.get("/").await;
         assert_eq!(res.status(), StatusCode::OK);
         assert_eq!(res.text().await, "<h1>Hello, World!</h1>");
     }
