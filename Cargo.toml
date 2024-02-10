@@ -6,7 +6,7 @@ categories = ["development-tools::testing"]
 description = "Extra utilities for axum"
 homepage = "https://github.com/cloudwalk/axum-test-helper"
 keywords = ["axum", "test", "test-framework"]
-license = "MIT"
+license = "GPL-3.0-only"
 readme = "README.md"
 repository = "https://github.com/cloudwalk/axum-test-helper"
 
