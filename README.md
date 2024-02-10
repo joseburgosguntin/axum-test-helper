@@ -56,12 +56,11 @@ cargo test
 (cd examples/hello-world && cargo test)
 ```
 
-
 ## License
 
 This project is licensed under the [MIT license][license].
 
-[`axum`]: https://github.com/tokio-rs/axum/blob/405e3f8c44ce76c3922fa25db13491ea375c3e8e/axum/src/test_helpers/test_client.rs
-[examples]: https://github.com/cloudwalk/axum-test-helper/tree/main/examples
+[`axum`]: https://github.com/tokio-rs/axum/blob/62324aad912f17059c0952bea5989d27f05a96b3/axum/src/test_helpers/test_client.rs
+[examples]: https://github.com/joseburgosguntin/axum-test-helper/tree/main/examples/
 [docs]: https://docs.rs/axum-test-helper
-[license]: https://github.com/cloudwalk/axum-test-helper/blob/main/LICENSE
+[license]: https://github.com/joseburgosguntin/axum-test-helper/blob/main/LICENSE
