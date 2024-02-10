@@ -28,7 +28,7 @@ async fn handler() -> Html<&'static str> {
 mod tests {
     use super::*;
     use axum::http::StatusCode;
-    use axum_test_helper::*;
+    use axum_test_helpers::*;
 
     #[tokio::test]
     async fn test_main_router() {

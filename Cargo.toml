@@ -3,11 +3,11 @@ name = "axum-test-helpers"
 version = "0.7.4"
 edition = "2021"
 categories = ["development-tools::testing"]
-description = "🧪 Test client for axum coppied from axum"
+description = "🧪 Test client for axum copied from axum"
 keywords = ["axum", "test", "test-framework"]
 license = "GPL-3.0-only"
 readme = "README.md"
-repository = "https://github.com/cloudwalk/axum-test-helper"
+repository = "https://github.com/cloudwalk/axum-test-helpers"
 
 [dependencies]
 axum = "0.7.4"

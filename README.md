@@ -1,6 +1,6 @@
-# axum-test-helper
+# axum-test-helpers
 
-`axum-test-helper` exposes [`axum`] original TestClient, which is private to the [`axum`] crate
+`axum-test-helpers` exposes [`axum`] original TestClient, which is private to the [`axum`] crate
 
 More information about this crate can be found in the [crate documentation][docs].
 
@@ -16,7 +16,7 @@ Add this crate as a dev-dependency:
 
 ```
 [dev-dependencies]
-axum-test-helper = "0.7.4"
+axum-test-helpers = "0.7.4"
 ```
 
 Use the TestClient on your own Router:
@@ -42,14 +42,14 @@ See the [crate documentation][docs] for way more examples.
 
 ## Disable trace
 
-By default axum-test-helper print trace like `Listening on 127.0.0.1:36457`. You can disable trace with `axum-test-helper = { version = "0.*", default-features = false, features = ["withouttrace"] }`.
+By default axum-test-helpers print trace like `Listening on 127.0.0.1:36457`. You can disable trace with `axum-test-helpers = { version = "0.*", default-features = false, features = ["withouttrace"] }`.
 
 ## Contributing
 
 Before submitting a pull request or after pulling from the main repository, ensure all tests pass:
 
 ```shell
-# Run axum-test-helper tests
+# Run axum-test-helpers tests
 cargo test
 
 # Test the hello-world example project
@@ -58,9 +58,9 @@ cargo test
 
 ## License
 
-This project is licensed under the [MIT license][license].
+This project is licensed under the [GPL-3.0-only][license].
 
 [`axum`]: https://github.com/tokio-rs/axum/blob/62324aad912f17059c0952bea5989d27f05a96b3/axum/src/test_helpers/test_client.rs
-[examples]: https://github.com/joseburgosguntin/axum-test-helper/tree/main/examples/
-[docs]: https://docs.rs/axum-test-helper
-[license]: https://github.com/joseburgosguntin/axum-test-helper/blob/main/LICENSE
+[examples]: https://github.com/joseburgosguntin/axum-test-helpers/tree/main/examples/
+[docs]: https://docs.rs/axum-test-helpers
+[license]: https://github.com/joseburgosguntin/axum-test-helpers/blob/main/LICENSE

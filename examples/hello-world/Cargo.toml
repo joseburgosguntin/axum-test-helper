@@ -6,5 +6,5 @@ publish = false
 
 [dependencies]
 axum =  "0.7.4"
-axum-test-helper = { path = "../../../axum-test-helper/"} 
+axum-test-helpers = { path = "../../../axum-test-helpers"} 
 tokio = { version = "1.0", features = ["full"] }
