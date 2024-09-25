@@ -1,6 +1,6 @@
 [package]
 name = "axum-test-helpers"
-version = "0.7.5"
+version = "0.7.6"
 edition = "2021"
 categories = ["development-tools::testing"]
 description = "🧪 Test client for axum copied from axum"
