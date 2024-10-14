@@ -83,6 +83,12 @@ impl TestClient {
             builder: self.client.patch(format!("http://{}{}", self.addr, url)),
         }
     }
+
+    pub fn delete(&self, url: &str) -> RequestBuilder {
+        RequestBuilder {
+            builder: self.client.delete(format!("http://{}{}", self.addr, url)),
+        }
+    }
 }
 
 pub struct RequestBuilder {
